@@ -51,3 +51,12 @@ RUN /tmp/kmods-install.sh && \
     rm -rf /tmp/* /var/* && \
     ostree container commit && \
     mkdir -p /var/tmp && chmod -R 1777 /var/tmp
+
+RUN rpm-ostree install \
+    dmenu zsh git mg screen stow \
+    rclone ripgrep pv okular \
+    wmctrl xev xkill xdotool \
+    subversion openfortivpn \
+    java-11-openjdk java-17-openjdk java-21-openjdk \
+    syncthing \
+    virt-manager
