@@ -43,6 +43,7 @@
                 "symlinks",
                 "tcpdump",
                 "tmux",
+                "patch",
                 "traceroute",
                 "vim",
                 "wireguard-tools",
