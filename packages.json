@@ -61,6 +61,8 @@
                 "xev",
                 "xkill",
                 "xdotool",
+                "plasma-workspace-x11",
+                "kwin-x11",
                 "subversion",
                 "openfortivpn",
                 "java-11-openjdk",
