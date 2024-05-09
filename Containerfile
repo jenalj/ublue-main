@@ -38,19 +38,19 @@ RUN mkdir -p /var/lib/alternatives && \
 # !!! WARNING - KMODS IN MAIN IMAGES ARE DEPRECATED !!!
 
 # Only "legacy" (Fedora 38 and older) have custom kmods included in the "main" images.
-FROM nokmods AS kmods
-
-ARG IMAGE_NAME="${IMAGE_NAME:-silverblue}"
-ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
-ARG RPMFUSION_MIRROR=""
-
-COPY kmods-install.sh /tmp/kmods-install.sh
-COPY kmods-sys_files /tmp/kmods-files
-
-COPY --from=ghcr.io/ublue-os/akmods:main-${FEDORA_MAJOR_VERSION} /rpms /tmp/akmods-rpms
-
+#FROM nokmods AS kmods
+#
+#ARG IMAGE_NAME="${IMAGE_NAME:-silverblue}"
+#ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
+#ARG RPMFUSION_MIRROR=""
+#
+#COPY kmods-install.sh /tmp/kmods-install.sh
+#COPY kmods-sys_files /tmp/kmods-files
+#
+#COPY --from=ghcr.io/ublue-os/akmods:main-${FEDORA_MAJOR_VERSION} /rpms /tmp/akmods-rpms
+#
 # kmods-install.sh will error if running in Fedora 39 or newer.
-RUN /tmp/kmods-install.sh && \
-    rm -rf /tmp/* /var/* && \
-    ostree container commit && \
-    mkdir -p /var/tmp && chmod -R 1777 /var/tmp
+#RUN /tmp/kmods-install.sh && \
+#    rm -rf /tmp/* /var/* && \
+#    ostree container commit && \
+#    mkdir -p /var/tmp && chmod -R 1777 /var/tmp
