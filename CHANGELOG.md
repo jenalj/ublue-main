@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/jenalj/ublue-main/compare/v2.2.0...v2.3.0) (2024-05-20)
+
+
+### Features
+
+* **dev:** add justfile for local testing and integration with vscode ([#578](https://github.com/jenalj/ublue-main/issues/578)) ([7e07358](https://github.com/jenalj/ublue-main/commit/7e073587cee57db4d77ca7677cf80d07f5bc0583))
+
 ## [2.2.0](https://github.com/jenalj/ublue-main/compare/v2.1.0...v2.2.0) (2024-05-09)
 
 
