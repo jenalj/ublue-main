@@ -162,6 +162,7 @@
 
 ## [2.1.0](https://github.com/ublue-os/main/compare/v2.0.0...v2.1.0) (2024-05-07)
 
+
 ### Features
 
 * Add Gnome EPUB files thumbnailing support ([#457](https://github.com/ublue-os/main/issues/457)) ([1c73f37](https://github.com/ublue-os/main/commit/1c73f37c8cf56adc8eb2260e9272f4546da006b8))

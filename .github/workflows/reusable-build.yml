@@ -16,7 +16,7 @@ concurrency:
 jobs:
   build_ublue:
     name: main
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       packages: write
@@ -120,7 +120,7 @@ jobs:
 
       - name: Get current version
         id: labels
-        uses: Wandalen/wretry.action@v3.4.0
+        uses: Wandalen/wretry.action@v3.5.0
         with:
           attempt_limit: 3
           attempt_delay: 15000
@@ -148,7 +148,7 @@ jobs:
             io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
 
       - name: Pull base image
-        uses: Wandalen/wretry.action@v3.4.0
+        uses: Wandalen/wretry.action@v3.5.0
         with:
           attempt_limit: 3
           attempt_delay: 15000
@@ -185,7 +185,7 @@ jobs:
           string: ${{ env.IMAGE_REGISTRY }}
 
       - name: Push To GHCR
-        uses: Wandalen/wretry.action@v3.4.0
+        uses: Wandalen/wretry.action@v3.5.0
         id: push
         if: github.event_name != 'pull_request'
         env:
