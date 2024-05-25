@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/jenalj/ublue-main/compare/v2.3.0...v2.3.1) (2024-05-25)
+
+
+### Bug Fixes
+
+* remove ffmpeg-free from all images ([#582](https://github.com/jenalj/ublue-main/issues/582)) ([9f5b4e7](https://github.com/jenalj/ublue-main/commit/9f5b4e74add8c053402e99a99fa37fe7f20b978e))
+
 ## [2.3.0](https://github.com/jenalj/ublue-main/compare/v2.2.0...v2.3.0) (2024-05-20)
 
 
