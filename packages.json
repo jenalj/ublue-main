@@ -48,6 +48,8 @@
                 "traceroute",
                 "vim",
                 "wireguard-tools",
+                "telnet",
+                "netcat",
                 "zstd",
                 "dmenu",
                 "zsh",
