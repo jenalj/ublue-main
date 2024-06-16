@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/jenalj/ublue-main/compare/v2.3.1...v2.4.0) (2024-06-16)
+
+
+### Features
+
+* Add flatpak-spawn package by default ([#583](https://github.com/jenalj/ublue-main/issues/583)) ([2d8dca6](https://github.com/jenalj/ublue-main/commit/2d8dca6e7d9b54b8637be49a2f0d0d80f3eb0bfc))
+
 ## [2.3.1](https://github.com/jenalj/ublue-main/compare/v2.3.0...v2.3.1) (2024-05-25)
 
 
